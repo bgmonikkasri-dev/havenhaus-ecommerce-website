@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import API_URL from "../api";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const Signup = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:8082/signup",
+        "${API_URL}/login",
         {
           method: "POST",
           headers: {

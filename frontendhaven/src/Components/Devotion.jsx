@@ -27,7 +27,7 @@ import bell from "../images/dev6.jpeg";
 import holybook from "../images/dev7.jpg";
 import incenseholder from "../images/dev8.jpeg";
 
-const API_URL = "http://localhost:8082";
+import API_URL from "../api";
 
 /* =====================================================
    STATIC DEVOTION PRODUCTS

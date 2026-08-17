@@ -10,8 +10,7 @@ import { useNavigate } from "react-router-dom";
 // =====================================================
 // API URL
 // =====================================================
-const API_URL = "http://localhost:8082";
-
+import API_URL from "../api";
 Modal.setAppElement("#root");
 
 const Cart = () => {

@@ -25,7 +25,7 @@ const Login = ({ onLogin }) => {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:8082/login",
+        "${API_URL}/login",
         {
           email: email.trim(),
           password,

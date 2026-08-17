@@ -27,8 +27,7 @@ import humidifier from "../images/bed6.jpg";
 import spaceHeater from "../images/bed7.webp";
 import airPurifier from "../images/bed8.jpg";
 
-const API_URL = "http://localhost:8082";
-
+import API_URL from "../api";
 /* =====================================================
    STATIC BEDROOM PRODUCTS
 ===================================================== */

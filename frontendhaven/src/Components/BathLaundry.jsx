@@ -27,7 +27,7 @@ import fabricSoftener from "../images/bat6.jpg";
 import stainRemover from "../images/bat7.jpg";
 import washingPowder from "../images/bat8.jpg";
 
-const API_URL = "http://localhost:8082";
+import API_URL from "../api";
 
 /* =====================================================
    STATIC BATH & LAUNDRY PRODUCTS

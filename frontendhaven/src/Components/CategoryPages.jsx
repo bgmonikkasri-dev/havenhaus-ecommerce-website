@@ -11,7 +11,7 @@ const CategoryPage = () => {
     const fetchCategoryProducts = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:8082/products");
+        const response = await axios.get("${API_URL}/loginproducts");
         const allProducts = Array.isArray(response.data)
           ? response.data
           : response.data.products || [];

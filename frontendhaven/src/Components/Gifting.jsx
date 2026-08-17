@@ -27,7 +27,7 @@ import aromaDiffuser from "../images/gif6.jpeg";
 import lantern from "../images/gif7.jpg";
 import galaxyProjector from "../images/gif8.jpg";
 
-const API_URL = "http://localhost:8082";
+import API_URL from "../api";
 
 /* =====================================================
    STATIC GIFTING PRODUCTS

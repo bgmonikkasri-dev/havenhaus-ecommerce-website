@@ -27,7 +27,7 @@ import kblender from "../images/din6.jpg";
 import kgrinder from "../images/din7.jpg";
 import kmixer from "../images/din8.jpeg";
 
-const API_URL = "http://localhost:8082";
+import API_URL from "../api";
 
 /* =====================================================
    STATIC KITCHEN PRODUCTS

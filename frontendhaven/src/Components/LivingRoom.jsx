@@ -27,7 +27,7 @@ import humidifier from "../images/liv6.webp";
 import smartBulbs from "../images/liv7.jpg";
 import roboVac from "../images/liv8.jpg";
 
-const API_URL = "http://localhost:8082";
+import API_URL from "../api";
 
 /* =====================================================
    STATIC LIVING ROOM PRODUCTS

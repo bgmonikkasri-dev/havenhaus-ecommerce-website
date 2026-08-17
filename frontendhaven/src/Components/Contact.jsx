@@ -46,7 +46,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8082/contact",
+        "${API_URL}/contact",
         form
       );
 

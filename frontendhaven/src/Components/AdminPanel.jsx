@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:8082";
+import API_URL from "../api";
 
 const colors = {
   black: "#171310",
