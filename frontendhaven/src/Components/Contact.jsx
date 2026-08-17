@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import API_URL from "../api";
 
 import contactImage from "../images/havenlogo.png";
 
@@ -46,7 +47,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "${API_URL}/contact",
+        `${API_URL}/contact`,
         form
       );
 
@@ -296,7 +297,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           MAIN CONTAINER
+            MAIN CONTAINER
         ===================================================== */
         .contact-container {
           min-height: 100vh;
@@ -310,7 +311,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           HEADER
+            HEADER
         ===================================================== */
         .contact-header {
           max-width: 900px;
@@ -353,7 +354,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           SOCIAL ICONS
+            SOCIAL ICONS
         ===================================================== */
         .social-icons {
           display: flex;
@@ -387,7 +388,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           IMAGE
+            IMAGE
         ===================================================== */
         .contact-image-container {
           width: auto;
@@ -411,7 +412,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           CONTACT INFORMATION
+            CONTACT INFORMATION
         ===================================================== */
         .contact-info {
           max-width: 1100px;
@@ -435,7 +436,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           CONTACT CARDS
+            CONTACT CARDS
         ===================================================== */
         .contact-cards {
           display: flex;
@@ -496,7 +497,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           FORM SECTION
+            FORM SECTION
         ===================================================== */
         .contact-form-section {
           max-width: 700px;
@@ -521,7 +522,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           FORM
+            FORM
         ===================================================== */
         .contact-form {
           display: flex;
@@ -592,7 +593,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           SUBMIT BUTTON
+            SUBMIT BUTTON
         ===================================================== */
         .contact-submit {
           width: 100%;
@@ -629,7 +630,7 @@ const Contact = () => {
         }
 
         /* =====================================================
-           RESPONSIVE
+            RESPONSIVE
         ===================================================== */
         @media (max-width: 768px) {
           .contact-container {
