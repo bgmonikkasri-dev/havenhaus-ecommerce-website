@@ -42,7 +42,7 @@ const Signup = () => {
       setLoading(true);
 
       const response = await fetch(
-        "${API_URL}/login",
+        `${API_URL}/signup`,
         {
           method: "POST",
           headers: {
@@ -56,7 +56,14 @@ const Signup = () => {
         }
       );
 
-      const data = await response.json();
+      const contentType = response.headers.get("content-type");
+      let data = {};
+      if (contentType && contentType.includes("application/json")) {
+        data = await response.json();
+      } else {
+        const text = await response.text();
+        throw new Error(text || "Server returned an invalid response.");
+      }
 
       if (!response.ok || !data.success) {
         setError(
@@ -83,7 +90,8 @@ const Signup = () => {
       console.error("Signup error:", err);
 
       setError(
-        "Cannot connect to the server. Please make sure the backend is running."
+        err.message ||
+          "Cannot connect to the server. Please make sure the backend is running."
       );
     } finally {
       setLoading(false);
