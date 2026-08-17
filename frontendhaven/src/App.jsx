@@ -11,7 +11,7 @@ import Layout from "./Components/Layout";
 import ProtectedRoute from "./Components/ProtectedRoute";
 
 /* Auth & admin */
-import Login from "./Components/Login";
+import Login from "./Components/login";
 import Signup from "./Components/Signup";
 import ResetPassword from "./Components/ResetPassword";
 import AdminPanel from "./Components/AdminPanel";
