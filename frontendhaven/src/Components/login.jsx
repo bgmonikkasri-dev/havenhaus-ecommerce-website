@@ -26,7 +26,7 @@ const Login = ({ onLogin }) => {
       setLoading(true);
 
       const response = await axios.post(
-        '${API_URL}/login',
+        `${API_URL}/login`,
         {
           email: email.trim(),
           password,
