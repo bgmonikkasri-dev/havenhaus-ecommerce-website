@@ -1451,6 +1451,22 @@ app.delete(
   }
 );
 
+app.put("/admin/contacts/:id", async (req, res) => {
+  try {
+    const updatedContact = await Contact.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+    if (!updatedContact) {
+      return res.status(404).json({ success: false, message: "Contact not found" });
+    }
+    res.json({ success: true, contact: updatedContact });
+  } catch (err) {
+    res.status(500).json({ success: false, message: err.message });
+  }
+});
+
 // =====================================================
 // 404 HANDLER
 // =====================================================
