@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = import.meta.env.VITE_API_URL || "https://havenhaus-ecommerce-website.onrender.com";
+
 const ResetPassword = () => {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -19,7 +21,7 @@ const ResetPassword = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8082/reset-password",
+        `${API_URL}/reset-password`,
         {
           email,
           newPassword,
